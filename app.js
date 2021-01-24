@@ -101,7 +101,7 @@ const loadByCountry = async (country) => {
         population = cases.population,
         lifeExpectancy = cases.life_expectancy,
         abbreviation = cases.abbreviation,
-        updated = updatedDate,
+        update = updatedDate,
       } = cases;
       document.querySelector("tbody").insertAdjacentHTML(
         "beforeend",
@@ -115,7 +115,7 @@ const loadByCountry = async (country) => {
         <td>${population}</td>
         <td>${lifeExpectancy}</td>
         <td>${abbreviation}</td>
-        <td>${updated}</td>
+        <td>${update}</td>
         </tr>
 
   `

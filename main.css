@@ -12,7 +12,7 @@ body {
   font-family: "Lato", sans-serif;
   letter-spacing: 0.02em;
   font-size: 1.6rem;
-  color: #444;
+  color: #333;
 }
 
 .header {
@@ -44,6 +44,7 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 table {
@@ -51,8 +52,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   color: #fff;
-  background: #000 url(./images/corona-bg.jpg) no-repeat center center;
+  background: url(./images/corona-bg.png) no-repeat center center;
   background-size: cover;
+  position: relative;
+  border: 0.2rem solid rgba(255, 204, 0, 0.8);
 }
 
 table th,
@@ -61,21 +64,24 @@ table td {
 }
 
 table thead {
-  font-size: 1.4rem;
-  line-height: 1.2rem;
-  background: #fb7167;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  background: #ce2828;
   text-transform: uppercase;
 }
 
 table thead th {
   color: rgba(0, 0, 0, 0.7);
-  padding: 0.8rem;
+  padding: 1.4rem 0.5rem;
   font-weight: bold;
   vertical-align: bottom;
+  color: #fff;
 }
 
 table thead th:nth-child(1) {
   width: 15%;
+  text-align: left;
+  padding-left: 2rem;
 }
 table thead th:nth-child(2) {
   width: 15%;
@@ -100,4 +106,41 @@ table thead th:nth-child(8) {
 }
 table thead th:nth-child(9) {
   width: 15%;
+}
+
+table tbody {
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+table tbody td:first-child {
+  text-align: left;
+  padding-left: 2rem;
+  font-weight: 700;
+  background: rgba(251, 113, 103, 0.3);
+  transition: background 0.3s;
+}
+
+table tbody tr {
+  border-bottom: 1px solid rgba(255, 204, 0, 0.8);
+  transition: background 0.3s;
+}
+table tbody tr:last-child {
+  border-bottom: 1px solid rgba(255, 204, 0, 0.8);
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+table tbody tr:hover {
+  background: rgba(251, 113, 103, 0.6);
+}
+
+table tbody tr:hover td:first-child {
+  background: rgba(251, 113, 103, 0);
+}
+
+table tbody td {
+  padding: 1.2rem;
 }
