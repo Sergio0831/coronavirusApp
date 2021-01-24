@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.header {
+  background: #fee800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.header__text p {
+  font-weight: 300;
+  font-size: 5.2rem;
+  line-height: 6.2rem;
+}
+
+.header__text h2 {
+  font-weight: bold;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+}
+
+.header__img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  margin: 5rem auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #fff;
+  background: #000 url(./images/corona-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+table th,
+table td {
+  text-align: center;
+}
+
+table thead {
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  background: #fb7167;
+  text-transform: uppercase;
+}
+
+table thead th {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0.8rem;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+table thead th:nth-child(1) {
+  width: 15%;
+}
+table thead th:nth-child(2) {
+  width: 15%;
+}
+table thead th:nth-child(3) {
+  width: 8%;
+}
+table thead th:nth-child(4) {
+  width: 8%;
+}
+table thead th:nth-child(5) {
+  width: 8%;
+}
+table thead th:nth-child(6) {
+  width: 8%;
+}
+table thead th:nth-child(7) {
+  width: 15%;
+}
+table thead th:nth-child(8) {
+  width: 10%;
+}
+table thead th:nth-child(9) {
+  width: 15%;
+}
