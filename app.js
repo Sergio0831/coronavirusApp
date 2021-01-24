@@ -104,7 +104,7 @@ const loadByCountry = async (country) => {
         update = updatedDate,
       } = cases;
       document.querySelector("tbody").insertAdjacentHTML(
-        "beforeend",
+        "afterbegin",
         `
         <tr>
         <td>${country}</td>
