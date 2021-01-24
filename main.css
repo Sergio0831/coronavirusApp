@@ -180,7 +180,6 @@ table tbody td {
   }
   td:before {
     font-weight: 700;
-    background: #000;
   }
   td:nth-child(1):before {
     content: "Country";
