@@ -15,12 +15,23 @@ body {
   color: #333;
 }
 
+.heading {
+  margin: 3rem 0 2rem;
+}
+
+select {
+  padding: 1rem;
+  width: 20rem;
+  font-size: 1.6rem;
+}
+
 .header {
   background: #fee800;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10rem;
+  width: 100%;
 }
 
 .header__text p {
@@ -40,11 +51,37 @@ body {
   height: 20rem;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__text p {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 4.2rem;
+  }
+
+  .header__text h2 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.4rem;
+  }
+
+  .header__img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+  overflow: auto;
 }
 
 table {
@@ -72,40 +109,17 @@ table thead {
 
 table thead th {
   color: rgba(0, 0, 0, 0.7);
-  padding: 1.4rem 0.5rem;
+  padding: 1.4rem 1rem;
   font-weight: bold;
   vertical-align: bottom;
   color: #fff;
+  border-left: 1px solid rgba(255, 204, 0, 0.8);
 }
 
 table thead th:nth-child(1) {
-  width: 15%;
   text-align: left;
   padding-left: 2rem;
-}
-table thead th:nth-child(2) {
-  width: 15%;
-}
-table thead th:nth-child(3) {
-  width: 8%;
-}
-table thead th:nth-child(4) {
-  width: 8%;
-}
-table thead th:nth-child(5) {
-  width: 8%;
-}
-table thead th:nth-child(6) {
-  width: 8%;
-}
-table thead th:nth-child(7) {
-  width: 15%;
-}
-table thead th:nth-child(8) {
-  width: 10%;
-}
-table thead th:nth-child(9) {
-  width: 15%;
+  border-left: none;
 }
 
 table tbody {
@@ -143,4 +157,58 @@ table tbody tr:hover td:first-child {
 
 table tbody td {
   padding: 1.2rem;
+}
+
+@media (max-width: 550px) {
+  table,
+  tr,
+  td {
+    display: grid;
+  }
+  th,
+  thead {
+    display: none;
+  }
+  td {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 204, 0, 0.8);
+  }
+  table tbody td:first-child {
+    padding-left: 1rem;
+    background: none;
+  }
+  td:before {
+    font-weight: 700;
+  }
+  td:nth-child(1):before {
+    content: "Country";
+  }
+  td:nth-child(2):before {
+    content: "Capital City";
+  }
+  td:nth-child(3):before {
+    content: "Confirmed";
+  }
+  td:nth-child(4):before {
+    content: "Recovered";
+  }
+  td:nth-child(5):before {
+    content: "Deaths";
+  }
+  td:nth-child(6):before {
+    content: "Population";
+  }
+  td:nth-child(7):before {
+    content: "Life Expectancy";
+  }
+  td:nth-child(8):before {
+    content: "Abbreviation";
+  }
+  td:nth-child(9):before {
+    content: "Updated";
+  }
+  table tbody tr {
+    border-bottom: 3px solid rgba(255, 204, 0, 0.8);
+  }
 }
